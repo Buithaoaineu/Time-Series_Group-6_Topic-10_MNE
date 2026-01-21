@@ -39,5 +39,37 @@ Our analysis follows several key steps:
 
 **Transition**  
 
-“In summary, the exploratory analysis shows that the dataset is rich in EEG and eye‑tracking signals, with high sampling resolution and multiple channels. However, missing metadata and potential noise must be addressed in preprocessing. In the next section, we will move from exploration to detailed analysis, focusing on event‑related responses.”
 
+**NỘI DUNG LÀM SLIDE**
+**Introduction & Dataset description**
+
+Introduction:
+Goal: Explore EEG + eye‑tracking dataset
+Understand structure, detect patterns, highlight issues
+Dataset description:
+EyeLink dataset: 129‑channel EEG (EGI) + ASCII eye‑tracking
+Task: Pupillary light reflex (fixation + light flashes)
+Events recorded simultaneously by both systems
+
+**Analysis & Findings**
+Analysis steps:
+Load dataset with MNE
+Inspect metadata (duration, sampling rate, channels, events)
+Band‑pass filter EEG (1–30 Hz)
+Epoch around light flash events
+Compute ERPs (average brain response)
+Analyze gaze + pupil size vs EEG
+Findings:
+Channels overview: 3 misc channels, 1 stimulus, 2 gaze, 1 pupil. No digitization → limits source localization
+Filter applied: Acquisition: 0 Hz high‑pass, 500 Hz low‑pass. Raw signal wide range → preprocessing needed
+Trends and Seasonality: No long‑term cycles. Short‑term repeating responses (pupil/gaze) linked to stimuli
+
+**Issues**
+Missing participant info
+No head/sensor digitization
+Noise/artifacts → require filtering & rejection
+
+**Summary**
+Dataset rich in EEG + eye‑tracking, high resolution
+Preprocessing needed to address metadata gaps & noise
+Next: detailed event‑related analysis
