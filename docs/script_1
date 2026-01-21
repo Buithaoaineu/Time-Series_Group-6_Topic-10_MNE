@@ -1,0 +1,48 @@
+Giới thiệu về điện não đồ
+Điện não đồ (Electroencephalography – EEG) là phương pháp ghi lại hoạt động điện của não thông qua các điện cực đặt trên da đầu. Dữ liệu EEG có đặc điểm là chuỗi thời gian tần số cao, phản ánh sự dao động của các sóng não (delta, theta, alpha, beta, gamma) trong quá trình con người thực hiện các hoạt động như nghỉ ngơi, tập trung, hoặc phản ứng với kích thích bên ngoài.
+Trong lĩnh vực khoa học dữ liệu, EEG được xem là một ví dụ điển hình của time series phức tạp, bởi nó vừa chứa thông tin có giá trị sinh lý, vừa bị ảnh hưởng mạnh bởi nhiễu và các yếu tố ngoại lai. Việc phân tích EEG giúp chúng ta hiểu rõ hơn về cơ chế hoạt động của não bộ, đồng thời mở ra nhiều ứng dụng trong y học, thần kinh học, và công nghệ giao diện não–máy (Brain-Computer Interface)
+
+Electroencephalography (EEG) is a method of recording the electrical activity of the brain using electrodes placed on the scalp. EEG data is characterized by high-frequency time series, reflecting the oscillations of brain waves (delta, theta, alpha, beta, gamma) during human activities such as resting, concentrating, or responding to external stimuli.
+In the field of data science, EEG is considered a prime example of a complex time series because it contains both valuable physiological information and is strongly affected by noise and extraneous factors. EEG analysis helps us better understand the mechanisms of brain function and opens up many applications in medicine, neurology, and brain-computer interface technology.
+
+
+
+Đặt vấn đề về điện não đồ
+Tuy EEG mang lại nhiều thông tin quan trọng, nhưng việc xử lý và phân tích dữ liệu này đặt ra một số thách thức:
+Nhiễu và artifact: tín hiệu EEG thường bị lẫn với nhiễu từ chuyển động mắt, cơ, hoặc môi trường.( vd: chớp mắt, cử động cơ bắp,..)
+Đặc trưng phức tạp: dữ liệu EEG có nhiều kênh, tần số cao, và biến động nhanh, khó phân tích trực tiếp.
+Yêu cầu tiền xử lý: cần lọc tín hiệu, chuẩn hóa, và trích xuất đặc trưng trước khi áp dụng các mô hình dự báo.(update thêm)
+Liên hệ sinh lý: kết quả phân tích phải được diễn giải trong bối cảnh thần kinh học (ví dụ: sóng alpha liên quan đến trạng thái thư giãn).
+
+While EEG provides a wealth of important information, processing and analyzing this data presents several challenges:
+-Noise and artifacts: EEG signals are often mixed with noise from eye movements, muscles, or the environment (e.g., blinking, muscle movements).
+-Complex features: EEG data are multi-channel, high-frequency, and rapidly fluctuating, making direct analysis difficult.
+-Preprocessing requirements: signal filtering, normalization, and feature extraction are necessary before applying predictive models.
+-Physiological relevance: analysis results must be interpreted within a neurological context (e.g., alpha waves are associated with relaxation).
+
+Tại sao chuỗi tgian lại hiệu quả trong việc phân tích điện não 
+Để giải quyết những thách thức này, MNE Sample Dataset được sử dụng như một bộ dữ liệu chuẩn, giúp người học thực hành toàn bộ quy trình: từ tải dữ liệu EEG, tiền xử lý, phân tích đặc trưng, đến áp dụng các mô hình chuỗi thời gian (ARIMA, SARIMA, Holt-Winters).
+Mục tiêu của nghiên cứu này là làm chủ quy trình phân tích EEG bằng phương pháp chuỗi thời gian thông qua MNE Sample Dataset.
+To address these challenges, the MNE Sample Dataset is used as a standard dataset, helping learners practice the entire process: from loading EEG data, preprocessing, feature analysis, to applying time series models (ARIMA, SARIMA, Holt-Winters).
+
+The objective of our project is to master the process of EEG analysis using time series methods through the MNE Sample Dataset.
+
+Giới thiệu về dataset
+The dataset we use in our project is a sample dataset of MNE, collected by MGH/HMS/MIT Athinoula A. Martinos Center Biomedical Imaging using the Neuromag Vectorview system.
+
+Three types of data were collected via the methods below:
+-EGG and MEG data simultaneously: Through a 60-channel electrode cap.
+-MRI data: Siemens 1.5T Sonata scanner (using MPRAGE sequence).
+
+This is how the experiment were conducted:
+-Checkerboard patterns were presented to the subject into the left and right visual field, interspersed by tones to the left or right ear.
+-Each stimulation occurred every 750 mili second.
+-Occasionally, a smiley face was shown at the center of the visual field. The subject was required to press a button with the right index finger as soon as possible after the face appeared.
+Thus, the sample dataset contains information as below:
+-Response to left-ear auditory stimulus (LA)
+-Response to right-ear auditory stimulus (RA)
+-Response to left visual field stimulus (LV)
+-Response to right visual field stimulus (RV)
+-Response to the smiley face (smiley)
+-Response triggered by pressing the button (button).
+
