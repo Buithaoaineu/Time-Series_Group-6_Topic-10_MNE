@@ -23,25 +23,27 @@ Our analysis follows several key steps:
 
 **Channels Overview**  
 
-“The dataset contains three miscellaneous channels, one stimulus channel, two channels for gaze position, and one channel for pupil size. Head and sensor digitization information is not available. This combination allows us to analyze both brain responses and eye movements during the experiment.”
+The dataset has several types of channels: three extra channels, one stimulus channel, two channels for eye position, and one channel for pupil size. Information about head and sensor positions is missing. With this setup, we can study both brain activity and eye movements during the experiment.
 
 **Filters Applied**  
 
-“At acquisition, the data was recorded with a high‑pass filter at zero hertz and a low‑pass filter at five hundred hertz. This means that the raw signal covers almost the entire frequency range of interest, and further preprocessing will be required to focus on the relevant bands.”
+The data was recorded with a high‑pass filter at 0 Hz and a low‑pass filter at 500 Hz. This means the raw signal includes almost the whole frequency range. We will need more preprocessing to focus on the brain wave bands that matter
 
-**Trends and Seasonality**  
-
-“Because the data is continuous EEG and eye‑tracking, we do not expect long‑term seasonal cycles like in sales or weather data. Instead, we look for repeating patterns in the pupil size and gaze position that correspond to stimulus events. These repeating responses can be considered short‑term cycles in the data.”
 
 **Issues Identified**  
 
-“There are several issues to note. First, the participant information is missing, which limits subject‑specific analysis. Second, head and sensor digitization data is not available, which restricts source localization. Third, the wide frequency range means that noise and artifacts are present, so careful filtering and artifact rejection will be necessary.”
+There are some problems:
+
+No participant information, so we cannot do subject‑specific analysis.
+
+No head or sensor position data, so we cannot locate brain sources.
+
+The wide frequency range means noise and artifacts are present, so careful filtering is needed
 
 **Transition**  
 
-“In summary, the exploratory analysis shows that the dataset is rich in EEG and eye‑tracking signals, with high sampling resolution and multiple channels. However, missing metadata and potential noise must be addressed in preprocessing. In the next section, we will move from exploration to detailed analysis, focusing on event‑related responses.”
+In summary, the dataset is rich in EEG and eye‑tracking signals, with high resolution and multiple channels. But missing metadata and noise must be handled in preprocessing. Next, we will move from exploration to detailed analysis, focusing on event‑related responses.
 
-**Transition**  
 
 
 **NỘI DUNG LÀM SLIDE**
