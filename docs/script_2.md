@@ -41,7 +41,7 @@ The wide frequency range means noise and artifacts are present, so careful filte
 
 **Transition**  
 
-In summary, the dataset is rich in EEG and eye‑tracking signals, with high resolution and multiple channels. But missing metadata and noise must be handled in preprocessing. Next, we will move from exploration to detailed analysis, focusing on event‑related responses.
+In summary, the dataset is rich in EEG and eye‑tracking signals, with high resolution and multiple channels. But missing metadata and noise must be handled in preprocessing. 
 
 
 
