@@ -1,7 +1,6 @@
 **Introduction**  
 
-In this section, I will present the exploratory data analysis of our EEG and eye‑tracking dataset. The goal of EDA is to understand the basic structure of the data, identify potential patterns such as trends or seasonality, and highlight any issues that may affect further analysis
-
+In this section, I will present the exploratory data analysis of our EEG and eye‑tracking dataset. The goal of EDA is to understand the basic structure of the data
 **Dataset Description**  
 
 In this study, we use the MNE Sample Dataset, a standard dataset commonly employed for practicing EEG analysis. The dataset contains both EEG signals (recorded with the EGI system) and eye-tracking data (in ASCII format), collected from a pupillary light reflex experiment.
