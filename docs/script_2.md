@@ -4,7 +4,11 @@ In this section, I will present the exploratory data analysis of our EEG and eye
 
 **Dataset Description**  
 
-The EyeLink dataset contains EEG data from 129 channels, recorded with an EGI system, and eye‑tracking data in ASCII format. The experiment is called the pupillary light reflex task. In this task, the participant fixated on a screen while short flashes of light appeared. Both EEG and eye‑tracking systems recorded the events simultaneously.
+In this study, we use the MNE Sample Dataset, a standard dataset commonly employed for practicing EEG analysis. The dataset contains both EEG signals (recorded with the EGI system) and eye-tracking data (in ASCII format), collected from a pupillary light reflex experiment.
+
+In the experiment, one participant fixated on the screen while short light flashes appeared. The onset of each flash was recorded by a photodiode attached to the screen, and the signal was sent simultaneously to both the EEG and eye-tracking systems.
+
+This setup provides data that captures both the brain’s electrical activity and the eye’s response, enabling analysis of the relationship between brain waves and eye movements within the same experiment.
 
 **Analysis Steps**  
 
