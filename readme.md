@@ -6,4 +6,4 @@ Topic 10: https://nghianguyen7171.github.io/ts_course/topic10.html
 
 MNE dataset: https://mne.tools/stable/documentation/datasets.html
 
-Eyelink: https://mne.tools/stable/documentation/datasets.html#eyelink
+Eyelink: https://mne.tools/stable/documentation/datasets.html#eyelink (mình dùng cái eye tracking nhá ae không phải free viewing đâu)
